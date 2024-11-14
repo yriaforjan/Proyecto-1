@@ -394,7 +394,6 @@ header div > img {
     width: 200px;
     height: auto;
 }
-/* contacto */
 #contacto {
     display: flex;
     flex-direction: column;
@@ -405,7 +404,7 @@ header div > img {
     width: 100%;
 }
 #contacto h3 {
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
 }
 #contacto > div {
@@ -441,7 +440,7 @@ header div > img {
     justify-content: end;
     gap: 20px;
 }
-#info_contacto li {
+#info_contacto a {
     display: flex;
     width: 100%;
     justify-content: start;
@@ -511,7 +510,6 @@ footer {
     align-items: center;
     gap: 10px;
     padding: 10px 50px 0 50px;
-    /* margin-top: 50px; */
 }
 footer > img {
     width: 100px;
@@ -699,9 +697,16 @@ footer ul img {
     header > a {
         justify-content: start;
     }
-    #burger_menu{
+    #burger_menu {
         justify-self: end;
+        width: 40px;
+        height: 40px;
     }
+    #logo {
+        width: 60px;
+        height: auto;
+    }
+
     #hero {
         height: 85vh;
     }
@@ -713,7 +718,7 @@ footer ul img {
         justify-content: center;
     }
     .productos ul {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     #comprar ol {
         gap: 40px;
@@ -726,5 +731,26 @@ footer ul img {
     }
     #personalizar {
         font-size: 16px;
+    }
+    .contactar {
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #info_contacto {
+        align-items: center;
+    }
+    #info_contacto a {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+    }
+    form {
+        justify-content: center;
+        text-align: start;
+    }
+    textarea {
+        width: 180px;
     }
 }
