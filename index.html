@@ -3,15 +3,1473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Yria Forján">
     <meta name="description" content="Descubre tus nuevos favoritos de bisutería. Piezas hechas a mano: pendientes, pulseras, collares. Con extra de amor.">
     <meta name="keywords" content="bisutere, bisutería, bisutería hecha a mano, bisutería handmade, joyas, pendientes, collar, pulsera">
+    <meta property="og:title" content="Bisutere">
+    <meta property="og:description" content="Tu nueva marca de bisutería hecha a mano. Descubre piezas únicas hechas por y para ti.">
+    <meta property="og:image" content="./assets/og.jpeg">
+    <meta property="og:image:alt" content="Pendientes colección Bisutere en expositor">
+    <meta name="twitter:title" content="Bisutere">
+    <meta name="twitter:description" content="¿Quieres un estilo fresco y moderno? Nuestras joyas hechas a mano harán que te sientas única.">
+    <meta name="twitter:image" content="./assets/tw.jpeg">
+    <meta name="twitter:image:alt" content="Colgantes colección Monabel en expositor">
     <meta name="author" content="Yria Forján">
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>Bisutere</title>
 </head>
 <body>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#marca">Marca</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <img id="burger_menu" src="./assets/icons/burger_menu.png" alt="icono menú hamburguesa"> <!-- para responsive, no funciona -->
+        <a href="index.html"><img id="logo" src="./assets/logo.png" alt="logo bisutere"></a>
+        <div>
+            <img src="./assets/icons/search.png" alt="icono lupa"> <!-- para responsive, no funciona -->
+            <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div id="contenido_hero">
+                <h1>Hecho a mano con mucho amor</h1>
+                <p>Descubre el arte de la bisutería en cada uno de nuestros diseños y siéntete especial con una pieza única creada especialmente para ti.</p>
+                <a href="#coleccion">Explorar</a>
+            </div>
+            <div id="img_hero">
+                <img src="./assets/hero.jpg" alt="pendientes en expositor">
+            </div>
+        </section>
+        <section id="coleccion">
+            <h2>Colección</h2>
+            <p>Sumérgete en el mundo de Bisutere y encuentra esa joya que resalta tu personalidad y te acompaña en cada momento.</p>
+            <nav>
+                <ul>
+                    <li><a href="#colecciones">Colecciones</a></li>
+                    <li><a href="#conjuntos">Conjuntos</a></li>
+                    <li><a href="#pendientes">Pendientes</a></li>
+                    <li><a href="#colgantes">Colgantes</a></li>
+                    <li><a href="#pulseras">Pulseras</a></li>
+                    <li><a href="#summer">Summer edition</a></li>
+                </ul>
+            </nav>
+            <a href="#comprar">¿Cómo comprar?</a>
+            <div>
+                <div id="colecciones" class="productos">
+                    <h3>Colecciones</h3>
+                    <h4 id="bisutere">Bisutere</h4>
+                    <p>Pendientes de acero inoxidable con piedras naturales. Disponible en dorado y plateado.</p>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00021.jpeg" alt="pendientes bisutere amatista">
+                            <p>Amatista</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00020.jpeg" alt="pendientes bisutere ágata persa">
+                            <p>Ágata persa</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00006.jpeg" alt="pendientes bisutere ámbar">
+                            <p>Ámbar</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00009.jpeg" alt="pendientes bisutere aventurina marrón">
+                            <p>Aventurina marrón</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00013.jpeg" alt="pendientes bisutere aventurina azul">
+                            <p>Aventurina azul</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00011.jpeg" alt="pendientes bisutere citrino">
+                            <p>Citrino</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00010.jpeg" alt="pendientes bisutere cuarzo rosa">
+                            <p>Cuarzo rosa</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00018.jpeg" alt="pendientes bisutere imperial azul">
+                            <p>Imperial azul</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00017.jpeg" alt="pendientes bisutere imperial azul cilindro">
+                            <p>Imperial azul cilindro</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00012.jpeg" alt="pendientes bisutere imperial azul verdosa">
+                            <p>Imperial azul verdosa</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00022.jpeg" alt="pendientes bisutere imperial turquesa violeta">
+                            <p>Imperial turquesa violeta</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00014.jpeg" alt="pendientes bisutere jaspe dálmata">
+                            <p>Jaspe dálmata</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00008.jpeg" alt="pendientes bisutere magenta">
+                            <p>Magenta</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00004.jpeg" alt="pendientes bisutere melón rojo">
+                            <p>Melón rojo</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00016.jpeg" alt="pendientes bisutere obsidiana caoba">
+                            <p>Obsidiana caoba</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00002.jpeg" alt="pendientes bisutere obsidiana negra">
+                            <p>Obsidiana negra</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00001.jpeg" alt="pendientes bisutere obsidiana nevada">
+                            <p>Obsidiana nevada</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00015.jpeg" alt="pendientes bisutere ojo de tigre">
+                            <p>Ojo de tigre</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00003.jpeg" alt="pendientes bisutere ópalo">
+                            <p>Ópalo</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00005.jpeg" alt="pendientes bisutere sodalita">
+                            <p>Sodalita</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00007.jpeg" alt="pendientes bisutere tropical">
+                            <p>Tropical</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/image00019.jpeg" alt="pendientes bisutere turquesa rosa">
+                            <p>Turquesa rosa</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li id="redondo">
+                            <img src="./assets/catalogo/bisutere/redondo1.jpeg" alt="pendientes bisutere redondo">
+                            <p>Bisutere redondo (elige tu piedra)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/bisutere/redondo2.jpeg" alt="pendientes bisutere redondo 2">
+                            <p>Bisutere redondo (elige tu piedra)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 id="armonia">Armonía</h4>
+                    <p>Piedras naturales para tu bienestar. Elige el tipo de piedra y uno o dos charms.</p>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/armonia/01.jpg" alt="collar jade verde doble">
+                            <p>Collar Jade verde</p>
+                            <div>
+                                <p>15€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/image00016.jpeg" alt="collar cuarzo rosa">
+                            <p>Collar Cuarzo rosa</p>
+                            <div>
+                                <p>15€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/02.jpg" alt="pulsera fluorita">
+                            <p>Fluorita</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/03.jpg" alt="pulsera cuarzo blanco">
+                            <p>Cuarzo blanco</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/04.jpg" alt="pulsera rodonita">
+                            <p>Rodonita</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/05.jpg" alt="pulsera jaspe dálmata">
+                            <p>Jaspe dálmata</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/06.jpg" alt="pulsera amatista">
+                            <p>Amatista</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/07.jpg" alt="pulsera jade verde">
+                            <p>Jade verde</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/08.jpg" alt="pulsera melón rojo">
+                            <p>Melón rojo</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/09.jpg" alt="pulsera aventurina marrón">
+                            <p>Aventurina marrón</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/10.jpg" alt="pulsera cuarzo ahumado">
+                            <p>Cuarzo ahumado</p>
+                            <div>
+                                <p>10€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/11.jpg" alt="pulsera howlita azul">
+                            <p>Howlita azul</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/12.jpg" alt="pulsera jaspe rosa">
+                            <p>Jaspe rosa</p>
+                            <div>
+                                <p>8,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/13.jpg" alt="pulsera howlita fucsia">
+                            <p>Howlita fucsia</p>
+                            <div>
+                                <p>8,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Animal print</h4>
+                    <p>Descubre tu lado salvaje con la tendencia actual más vibrante y llamativa.</p>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/animal_print/image00001.jpeg" alt="colgante bota">
+                            <p>Colgante bota</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/animal_print/image00002.jpeg" alt="colgante calavera vaca">
+                            <p>Colgante calavera vaca</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/animal_print/image00003.jpeg" alt="colgante calavera vaca marrón">
+                            <p>Colgante calavera vaca marrón</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/animal_print/image00012.jpeg" alt="colar cow girl">
+                            <p>Collar cow girl</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/animal_print/cow.JPG" alt="pendientes vaca">
+                            <p>Pendientes vaca</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Arcilla polimérica</h4>
+                    <p>Pendientes artesanales de arcilla polimérica. Tú eliges la forma y el color.</p>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00006.jpeg" alt="pendientes arcilla polimérica color salmón">
+                            <p>Color salmón</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00005.jpeg" alt="pendientes arcilla polimérica color blanco">
+                            <p>Color blanco</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00003.jpeg" alt="pendientes arcilla polimérica color azul marino">
+                            <p>Color azul marino</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00001.jpeg" alt="pendientes arcilla polimérica color azul eléctrico">
+                            <p>Color azul eléctrico</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00004.jpeg" alt="pendientes arcilla polimérica color verde oscuro">
+                            <p>Color verde oscuro</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00002.jpeg" alt="pendientes arcilla polimérica color vino tinto">
+                            <p>Color vino tinto</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00007.jpg" alt="pendientes arcilla polimérica color rojo">
+                            <p>Color rojo</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00008.jpeg" alt="pendientes arcilla polimérica color plateado">
+                            <p>Color plateado</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image0010.jpeg" alt="pendientes arcilla polimérica color dorado">
+                            <p>Color dorado</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image0011.jpeg" alt="pendientes arcilla polimérica color petróleo">
+                            <p>Color petróleo</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/arcilla/image00009.jpeg" alt="pendientes arcilla polimérica color bronce">
+                            <p>Color bronce</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="conjuntos" class="productos">
+                    <h3>Conjuntos</h3>
+                    <h4>Bisutere</h4>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/01.jpg" alt="conjunto bisutere amatista">
+                            <p>Amatista</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/02.jpg" alt="conjunto bisutere aventurina azul">
+                            <p>Aventurina azul</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/03.jpg" alt="conjunto bisutere aventurina marrón">
+                            <p>Aventurina marrón</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/04.jpg" alt="conjunto bisutere cuarzo citrino">
+                            <p>Cuarzo citrino</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/05.jpg" alt="conjunto bisutere turquesa magenta">
+                            <p>Turquesa magenta</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/06.jpg" alt="conjunto bisutere imperial azul">
+                            <p>Imperial azul</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/07.jpg" alt="conjunto bisutere obsidiana caoba">
+                            <p>Obsidiana caoba</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/08.jpg" alt="conjunto bisutere turquesa">
+                            <p>Turquesa</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/09.jpg" alt="conjunto bisutere jaspe dálmata">
+                            <p>Jaspe dálmata</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/10.jpg" alt="conjunto bisutere tropical">
+                            <p>Tropical</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/04.jpg" alt="conjunto bisutere cuarzo citrino">
+                            <p>Cuarzo citrino</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/11.jpg" alt="conjunto bisutere prehnita">
+                            <p>Prehnita</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Piedras</h4>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/50.jpg" alt="conjunto piedras fluorita">
+                            <p>Fluorita</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/51.jpg" alt="conjunto piedras rodonita">
+                            <p>Rodonita</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/52.jpg" alt="conjunto piedras turquesa azul">
+                            <p>Turquesa azul</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/53.jpg" alt="conjunto piedras jade verde">
+                            <p>Jade verde</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/54.jpg" alt="conjunto piedras jaspe dálmata">
+                            <p>Jaspe dálmata</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/55.jpg" alt="conjunto piedras coral rojo">
+                            <p>Coral rojo</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Summer</h4>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/conjuntos/flor.JPG" alt="conjunto summer flor">
+                            <p>Flor</p>
+                            <div>
+                                <p>25,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pendientes" class="productos">
+                    <h3>Pendientes</h3>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/bisutere.jpg" alt="pendientes bisutere">
+                            <p>Bisutere</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#bisutere">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/bisutere_redondo.JPG" alt="pendientes bisutere redondo">
+                            <p>Bisutere redondo</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#redondo">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/nacar_bolitas.jpg" alt="pendientes bolitas de nácar">
+                            <p>Bolitas de nácar (elige tu color)</p>
+                            <div>
+                                <p>14,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/cloe_estrella.JPG" alt="pendientes cloé estrella">
+                            <p>Cloé estrella (elige tu color)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/cloe_perla.jpg" alt="pendientes cloé perla">
+                            <p>Cloé perla (elige tu color)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/nacar_lunaestrella.jpg" alt="pendientes estrella/luna de nácar">
+                            <p>Estrella/luna de nácar (elige tu charm)</p>
+                            <div>
+                                <p>12€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/flor.JPG" alt="pendientes flor">
+                            <p>Flor</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/flower.jpg" alt="pendientes flower">
+                            <p>Flower (elige tu color)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/gemas_miel.jpg" alt="pendientes gemas de miel">
+                            <p>Gemas de miel (elige tu piedra)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#armonia">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/luna_verdeblanco.jpg" alt="pendientes luna blanco y verde">
+                            <p>Luna blanco y verde</p>
+                            <div>
+                                <p>12€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/luna_azulnaranja.jpg" alt="pendientes luna naranja y azul">
+                            <p>Luna naranja y azul</p>
+                            <div>
+                                <p>12€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/cornichello.jpeg" alt="pendientes piercing cornichello">
+                            <p>Piercing cornichello</p>
+                            <div>
+                                <p>7,00€ U | 12,00€ par</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/piercing_estrellitas.jpg" alt="pendientes piercing estrellitas">
+                            <p>Piercing estrellitas (elige tu color)</p>
+                            <div>
+                                <p>7,00€ U | 12,00€ par</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/redondos.jpg" alt="pendientes redondos">
+                            <p>Redondos resina (elige tu color)</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/redondos_vaca.JPG" alt="pendientes redondos vaca">
+                            <p>Redondos vaca (elige tu color)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/tortuga.jpg" alt="pendientes tortuga">
+                            <p>Tortuga</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/trixxie.JPG" alt="pendientes trixxie">
+                            <p>Trixxie (elige tu color)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/amarte.JPG" alt="pendientes amarte a mares">
+                            <p>Amarte a mares</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/fiji.jpg" alt="pendientes fiji">
+                            <p>Fiji</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/luna_largos.jpg" alt="pendientes luna largos">
+                            <p>Luna largos</p>
+                            <div>
+                                <p>14,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/ovalos_verdes.jpg" alt="pendientes óvalos verdes">
+                            <p>Óvalos verdes</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/perlas.jpg" alt="pendientes perlas">
+                            <p>Perlas</p>
+                            <div>
+                                <p>12€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pendientes/rombos.jpg" alt="pendientes rombos">
+                            <p>Rombos</p>
+                            <div>
+                                <p>12€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="colgantes" class="productos">
+                    <h3>Colgantes</h3>
+                    <h4>Monabel</h4>
+                    <p>De acero inoxidable con piedras naturales. Disponible dorado y plateado. Letra a elegir.</p>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/01.jpg" alt="colgante monabel tropical">
+                            <p>Tropical</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/02.jpg" alt="colgante monabel imperial turquesa violeta">
+                            <p>Imperial turquesa violeta</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/03.jpg" alt="colgante monabel jaspe dálmata">
+                            <p>Jaspe dálmata</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/04.jpg" alt="colgante monabel turquesa rosa">
+                            <p>Turquesa rosa</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/05.jpg" alt="colgante monabel aventurina marrón">
+                            <p>Aventurina marrón</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/06.jpg" alt="colgante monabel cuarzo blanco">
+                            <p>Cuarzo blanco</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/07.jpg" alt="colgante monabel aventurina azul">
+                            <p>Aventurina azul</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/08.jpg" alt="colgante monabel amatista">
+                            <p>Amatista</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/09.jpg" alt="colgante monabel prehnita">
+                            <p>Prehnita</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/10.jpg" alt="colgante monabel melón rojo">
+                            <p>Melón rojo</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/11.jpg" alt="colgante monabel ojo de trigre">
+                            <p>Ojo de trigre</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/12.jpg" alt="colgante monabel cuarzo citrino">
+                            <p>Cuarzo citrino</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/13.jpg" alt="colgante monabel imperial azul">
+                            <p>Imperial azul</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/14.jpg" alt="colgante monabel cuarzo rosa">
+                            <p>Cuarzo rosa</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/monabel/COLGANTES_MONABEL.jpg" alt="colgante monabel cadena lisa">
+                            <p>Cadena lisa dorada (elige letra y piedra)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Morango</h4>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/morango/naranja.JPEG" alt="choker morango naranja">
+                            <p>Chocker naranja</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/morango/azul.jpg" alt="choker morango azul">
+                            <p>Chocker azul</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/morango/violeta.JPEG" alt="choker morango violeta">
+                            <p>Chocker violeta</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/morango/flores_fuscsia.JPEG" alt="choker morango flores fucsia">
+                            <p>Chocker flores fucsia</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/morango/amatea.jpg" alt="choker morango amatea">
+                            <p>Chocker amatea</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Colgantes y collares</h4>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/cruzletra_dorado.jpg" alt="colgante cruz y letra dorado">
+                            <p>Cadena de nácar y letra a elegir (dorado)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/cruzletra_plateado.jpg" alt="colgante cruz y letra plateado">
+                            <p>Cadena de nácar y letra a elegir (plateado)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/cruzletra_plateado.jpg" alt="cadena peixiño">
+                            <p>Cadena "peixiño""</p>
+                            <div>
+                                <p>20,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/gargantilla_solluna.jpeg" alt="gargantilla sol/luna">
+                            <p>Chocker Sol/Luna</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/image00016.jpeg" alt="collar cuarzo rosa">
+                            <p>Cuarzo rosa</p>
+                            <div>
+                                <p>15€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/estrellaletra.jpg" alt="colgante estrella y letra">
+                            <p>Estrella + letra a elegir</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/flor.JPG" alt="colgante flor">
+                            <p>Flor</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/galerna.jpeg" alt="colgante galerna">
+                            <p>Galerna</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/gargantilla_moon.jpg" alt="gargantilla moon">
+                            <p>Gargantilla Moon (elige tu piedra)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/gargantilla_sol.jpeg" alt="gargantilla sol">
+                            <p>Gargantilla Sol (elige tu piedra)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/01.jpg" alt="collar jade verde">
+                            <p>Jade verde</p>
+                            <div>
+                                <p>15€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/libelula.JPG" alt="colgante libélula">
+                            <p>Libélula (personalizable)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/ojo_turco.jpeg" alt="colgantes ojo turco">
+                            <p>Ojo turco</p>
+                            <div>
+                                <p>14,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/perlas.JPG" alt="colgante perlas">
+                            <p>Perlas</p>
+                            <div>
+                                <p>20,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/colgantes/splendore.jpg" alt="colgantes splendore">
+                            <p>Splendore oro/plata (elige tu piedra)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pulseras" class="productos">
+                    <h3>Pulseras</h3>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/pulseras/aura.jpeg" alt="pulseras aura">
+                            <p>Aura</p>
+                            <div>
+                                <p>8,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pulseras/bijoux.jpeg" alt="pulseras bijoux">
+                            <p>Bijoux</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pulseras/cadena_ceramica.jpg" alt="pulsera cadena tortuga/estrella">
+                            <p>Cadena tortuga/estrella</p>
+                            <div>
+                                <p>8,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pulseras/2.jpg" alt="pulsera ojo turco">
+                            <p>Ojo turco (elige forma y piedras)</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#armonia">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pulseras/1.JPG" alt="pulsera ópalo y ojo turco">
+                            <p>Ópalo y ojo turco</p>
+                            <div>
+                                <p>8,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/pulseras/perlas.JPG" alt="pulsera perlas">
+                            <p>Perlas</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/armonia/02.jpg" alt="pulsera piedras naturales">
+                            <p>Piedras naturales (elige tu piedra)</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#armonia">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="summer" class="productos">
+                    <h3>Summer edition</h3>
+                    <ul>
+                        <li>
+                            <img src="./assets/catalogo/summer/4.jpg" alt="anillos de cuentas de rocalla">
+                            <p>Anillo rocalla</p>
+                            <div>
+                                <p>4,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/cornichello.JPG" alt="colgante cornichello">
+                            <p>Colgante cornichello</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/cornichello_cristal.JPG" alt="colgante cornichello cristal soplado">
+                            <p>Colgante cornichello cristal soplado</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/libelula.JPG" alt="colgante libélula">
+                            <p>Colgante libélula (personalizable)</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/pez.JPG" alt="colgante pez">
+                            <p>Colgante pez</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/turritella.jpg" alt="colgante turritella">
+                            <p>Colgante Turritella (elige tu  color)</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/concha.jpg" alt="collar concha">
+                            <p>Collar concha (elige tu  color)</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/coralrojo_conchas.JPG" alt="collar coral rojo conchas">
+                            <p>Collar coral rojo con conchas</p>
+                            <div>
+                                <p>15,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/piedras.JPG" alt="collar piedras naturales">
+                            <p>Collar piedras naturales rojo/azul</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/estrella.JPG" alt="pendientes estrella">
+                            <p>Pendientes Estrella</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/margot.jpg" alt="pendientes margot">
+                            <p>Pendientes Margot (elige tus piedras)</p>
+                            <div>
+                                <p>12,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/cruz_nacar.JPG" alt="pulsera cruz nácar">
+                            <p>Pulsera cruz nácar (elige tu color)</p>
+                            <div>
+                                <p>10,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/ellen.jpg" alt="pulsera ellen">
+                            <p>Pulsera ellen (elige tu estilo)</p>
+                            <div>
+                                <p>6,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/flor_perlas.JPG" alt="pulsera flores y perlas">
+                            <p>Pulsera flores y perlas</p>
+                            <div>
+                                <p>8,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/catalogo/summer/surfer.jpg" alt="pulsera surfer">
+                            <p>Pulsera surfer (elige tu  color)</p>
+                            <div>
+                                <p>6,00€</p>
+                                <a href="#comprar">Comprar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="marca">
+            <div id="conocenos"> 
+                <div id="marca_txt">
+                    <h2>Nuestra marca</h2>
+                    <div>
+                        <p><span>Bisutere</span> nace a razón de la pasión por la <span>bisu</span>tería y el ideal de poder lucir piezas únicas que no encontramos en las tiendas.</p>
+                        <p><span>Tere</span>, Teresa, es el alma de la marca, mano de obra y cabeza pensante.</p>
+                        <p>Con Bisutere te abrimos la oportunidad de poder encontrar las piezas perfectas que se adapten a cualquier ocasión y que mejor encajen con tu propio estilo.</p>
+                    </div>
+                </div>
+                <div id="marca_img">
+                    <img src="./assets/coroso.jpg" alt="playa de coroso">
+                </div>
+            </div>
+            <div id="medioambiente">
+                <p>Nuestros accesorios se fabrican de forma ética en España, concretamente desde Ribeira, un pequeño pueblo marinero situado en la costa oeste de Galicia.</p>
+                <div>
+                    <img src="./assets/icons/recycling.png" alt="icono reciclaje">
+                    <p id="lema">"Tenemos la voluntad de cuidar aquello que más nos importa"</p>
+                    <img src="./assets/icons/environment.png" alt="icono medio ambiente">
+                </div>
+                <p>En Bisutere nos preocupamos de que todos los artículos finales tengan el menor impacto posible sobre el medioambiente. Por ello, también utilizamos materiales reciclados y rescatamos accesorios que han quedado anticuados o en desuso para darle una segunda vida. ¡Tráenos el tuyo!</p>
+            </div>
+        </section>
+        <section id="comprar">
+            <h2>¿Cómo comprar?</h2>
+            <ol>
+                <li>
+                    <img class="icono" src="./assets/icons/manage_search.png" alt="icono localizar">
+                    <img class="contador" src="./assets/icons/counter_1.png" alt="icono contador 1">
+                    <p>Localiza el producto o productos que deseas adquirir</p>
+                </li>
+                <li>
+                    <img class="icono" src="./assets/icons/click.png" alt="icono flecha selectora">
+                    <img class="contador" src="./assets/icons/counter_2.png" alt="icono contador 2">
+                    <p>Pulsa el botón "comprar ahora" que encontrarás más abajo</p>
+                </li>
+                <li>
+                    <img class="icono" src="./assets/icons/edit_document.png" alt="icono editar documento">
+                    <img class="contador" src="./assets/icons/counter_3.png" alt="icono contador 3">
+                    <p>Rellena los campos con el nombre del producto o productos a comprar y, en caso de envío a domicilio, el campo de la dirección de envío</p>
+                    <p>Puedes añadir algún otro dato que consideres importante</p>
+                </li>
+                <li>
+                    <img class="icono" src="./assets/icons/outgoing_mail.png" alt="icono enviar email">
+                    <img class="contador" src="./assets/icons/counter_4.png" alt="icono contador 4">
+                    <p>Enviar email</p>
+                </li>
+                <li>
+                    <img class="icono" src="./assets/icons/contact.png" alt="icono contactar">
+                    <img class="contador" src="./assets/icons/counter_5.png" alt="icono contador 5">
+                    <p>Desde este momento, procesaremos tu pedido y te contactaremos lo antes posible</p>
+                </li>
+            </ol>
+            <a href="mailto:bisutere.accesorios@gmail.com?subject=Pedido%20online&body=¡Hola!%20Me%20gustaría%20comprar%20los%20siguientes%20productos:%20.%20La%20dirección%20de%20envío%20es:%20.%20¡Gracias!">Comprar ahora</a>
+        </section> 
+        <section id="personalizar">
+            <h3>Personaliza tu joya</h3>
+            <p>Si estás buscando artículos únicos ¡estás en el lugar adecuado!</p>
+            <div>
+                <img src="./assets/catalogo/43.JPG" alt="abalorios variados">
+                <img src="./assets/catalogo/IMG_0733.JPG" alt="pendientes de colores">
+                <img src="./assets/catalogo/IMG_0741.JPG" alt="pendientes de colores">
+                <img src="./assets/catalogo/image00009.jpeg" alt="abalorios variados">
+            </div>
+            <p>En Bisutere personalizamos tu bisutería. Desde el tamaño, piezas, colores...hasta accesorios, como puede ser la inicial de tu nombre.</p>
+            <p>La gama utilizada irá en función de tus gustos, existiendo accesorios de una misma clase pero a la vez distintos en alguno de sus elementos.</p>
+            <div>
+                <img src="./assets/catalogo/image00004.jpeg" alt="abalorios flores">
+                <img src="./assets/catalogo/image00005.jpeg" alt="abalorios flores">
+                <img src="./assets/catalogo/image00007.jpeg" alt="abalorios flores">
+            </div>
+            <p>Elaboramos cada artículo a mano y cuidando el más mínimo detalle, para configurar tu propia joya o para que hagas un regalo muy especial.</p>
+        </section>
+        <section id="contacto">
+            <h3>Contacta con nosotros</h3>
+            <div>
+                <div class="contactar">
+                    <h4>Información de contacto</h4>
+                    <p>Estamos aquí para ayudarte. Para consultas, soporte o comentarios, no dudes en ponerte en contacto con nosotros, te responderemos a la mayor brevedad posible.</p>
+                    <ul id="info_contacto">
+                        <li><img src="./assets/icons/whatsapp.png" alt="icono Whatsapp">+(34) 622 38 94 89</li>
+                        <li><img src="./assets/icons/email.png" alt="icono correo electrónico"><a href="mailto:bisutere.accesorios@gmail.com" target="_blank">bisutere.accesorios@gmail.com</a></li>
+                        <li><img src="./assets/icons/instagram.png" alt="icono Instagram"><a href="https://www.instagram.com/_bisutere/" target="_blank">@_bisutere</a></li>
+                    </ul>
+                </div>
+                <div class="contactar">
+                    <h4>¡Déjanos un mensaje!</h4>
+                    <form name="mensaje_contacto" action="#null" method="post">
+                        <fieldset>
+                            <legend>Información de contacto</legend>
+                            <div>
+                                <input class="caja" type="text" id="nombre" placeholder="Nombre y Apellidos" required>
+                                <input class="caja" type="email" name="email" placeholder="Correo Electrónico" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Mensaje</legend>
+                            <textarea name="mensaje" rows="4" cols="50" placeholder="Escriba aquí su mensaje..." required></textarea>
+                        </fieldset>     
+                        <input id="button" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./assets/logo.png" alt="logo Bisutere">
+        <div>
+            <p>2024 &copy; Bisutere | Todos los Derechos Reservados</p>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/_bisutere/" target="_blank"><img src="./assets/icons/instagram.png" alt="logo Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@bisutere" target="_blank"><img src="./assets/icons/tiktok.png" alt="logo Tik Tok"></a>
+                </li>
+                <li>
+                    <a href="https://www.canva.com/design/DAGOYwrfiAQ/O-yluIvlgTZe1hf_6oK6LA/view?utm_content=DAGOYwrfiAQ&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><img src="./assets/icons/canva.png" alt="logo Canva"></a>
+                </li>
+                <li>
+                    <a href="mailto:bisutere.accesorios@gmail.com" target="_blank"><img src="./assets/icons/email.png" alt="icono email"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

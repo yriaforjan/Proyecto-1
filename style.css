@@ -1,2 +1,730 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
+:root {
+    --color-primario: #ead9ce;
+    --color-secundario: #f2f2f2;
+    --color-terciario: #93415E;
+    --color-cuaternario: #1B1B1B;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--color-cuaternario);
+}
+h1 {
+    width: 100%;
+    font-size: 45px;
+    padding-bottom: 10px;
+    line-height: 1em;
+}
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h4 {
+    text-transform: uppercase;
+}
+body {
+    max-width: 100vw;
+    font-family: "Roboto";
+    background-color: var(--color-primario);
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    color: var(--color-cuaternario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primario);
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    width: 100%;
+    height: 15vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-rows: 15vh;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    padding: 0 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header li > a:hover {
+    color: var(--color-terciario);
+}
+#logo {
+    height: auto;
+    width: 120px;
+}
+header div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+header div > img {
+    width: 30px;
+    height: 30px;
+}
+#buscar {
+    color: var(--color-terciario);
+    background-color: transparent;
+    border: 3px solid var(--color-cuaternario);
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    padding: 10px;
+}
+#buscar::placeholder {
+    color: var(--color-cuaternario);
+}
+#burger_menu {
+    display: none;
+}
+#hero {
+    width: 100%;
+    max-height: 600px;
+    display: flex;
+}
+#contenido_hero {
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#contenido_hero p {
+    width: 100%;
+    font-size: 18px;
+}
+#contenido_hero a {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    border: 2px solid var(--color-terciario);
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img_hero {
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+#img_hero img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+}
+#coleccion {
+    width: 100%;
+    background-color: var(--color-secundario);
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+#coleccion h2 {
+    padding-top: 20px;
+}
+#coleccion nav {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-primario);
+}
+#coleccion > nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-weight: bold;
+}
+#coleccion > nav a:hover {
+    color: var(--color-terciario)
+}
+#coleccion > a {
+    font-weight: bold;
+    color: var(--color-terciario);
+    text-align: right;
+    width: 100%;
+}
+#coleccion > div {
+    width: 100%;
+    padding: 40px 20px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.productos h3 {
+    padding: 30px 0 30px 0;
+}
+.productos h4 {
+    padding-top: 20px;
+    text-align: center;
+}
+.productos > p {
+    text-align: center;
+}
+.productos ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+.productos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+.productos li:hover {
+    transform: scale(1.05);
+}
+.productos img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+.productos li > p {
+    font-weight: bold;
+}
+.productos div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.productos div > p {
+    font-size: 18px;
+}
+.productos a {
+    padding: 5px;
+    background-color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: 10%;
+    font-weight: bold;
+}
+#marca {
+    font-size: 18px;
+}
+#conocenos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+#marca_txt {
+    width: 40%;
+    padding: 120px 50px;
+}
+#marca_txt > div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 40px;
+    text-align: justify;
+}
+#marca span {
+    color: var(--color-terciario);
+    font-weight: bold;
+}
+#marca_img {
+    width: 60%;
+    height: auto;
+}
+#marca_img img {
+    border-top-left-radius: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
+}
+#medioambiente {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    padding: 50px;
+    text-align: center;
+}
+#medioambiente div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#medioambiente img {
+    height: 50px;
+    width: 50px;
+}
+#lema {
+    padding: 40px 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-secundario);
+}
+#comprar {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#comprar ol {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+    padding: 50px;
+}
+#comprar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 20%;
+    text-align: center;
+}
+.icono {
+    width: 80px;
+    height: 80px;
+}
+.contador {
+    width: 40px;
+    height: 40px;
+}
+#comprar a {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    background-color: var(--color-terciario);
+    border: 2px solid var(--color-terciario);
+    border-radius: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#comprar a {
+    color: var(--color-primario);
+}
+#personalizar {
+    background-color: var(--color-secundario);
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+#personalizar h3 {
+    padding-bottom: 30px;
+}
+#personalizar p{
+    text-align: center;
+}
+#personalizar div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#personalizar img {
+    width: 200px;
+    height: auto;
+}
+/* contacto */
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+}
+#contacto h3 {
+    padding: 50px;
+    text-align: center;
+}
+#contacto > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.contactar {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    font-size: 18px;
+}
+.contactar > h4 {
+    font-size: 18px;
+    color: var(--color-terciario);
+}
+.contactar p {
+    text-align: justify;
+}
+#info_contacto {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+#info_contacto li {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+#info_contacto img {
+    height: 30px;
+    width: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+form fieldset {
+    border-color: transparent;
+    width: 100%;
+}
+form fieldset div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+form .caja {
+    height: 40px;
+    width: 180px;
+}
+form .caja, form textarea {
+    background-color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+    color: var(--color-cuaternario);
+    padding: 5px;
+}
+form .caja:focus, form textarea:focus {
+    background-color: var(--color-cuaternario);
+    color: var(--color-secundario);
+}
+textarea {
+    resize: none;
+    min-width: 100%;
+    font-family: "Roboto";
+}
+#button {
+    height: 40px;
+    width: 100px;
+    background-color: var(--color-cuaternario);
+    border: 2px solid var(--color-cuaternario);
+    color: var(--color-secundario);
+}
+#button:hover {
+    background-color:var(--color-terciario);
+    border: 2px solid var(--color-terciario);
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 50px 0 50px;
+    /* margin-top: 50px; */
+}
+footer > img {
+    width: 100px;
+    height: auto;
+}
+footer div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--color-cuaternario);
+    padding: 10px;
+}
+footer p {
+    width: 50%;
+    font-size: 20px;
+    text-align: start;
+}
+footer ul {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+footer ul a {
+    display: flex;
+    align-items: center;
+}
+footer ul img {
+    width: 40px;
+    height: auto;
+}
 
-
+@media (max-width: 1023px) {
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    header nav {
+        display: none;
+    }
+    #burger_menu {
+        display: block;
+        align-self: center;
+        justify-self: center;
+        width: 50px;
+        height: 50px;
+    }
+    #logo {
+        object-fit: cover;
+    }
+    header div {
+        justify-content: center;
+    }
+    header div > img {
+        width: 40px;
+        height: 40px;
+    }
+    #buscar {
+        display: none;
+    }
+    #hero {
+        flex-direction: column;
+    }
+    #contenido_hero {
+        width: 100%;
+        order: 2;
+        align-items: center;
+        text-align: center;
+    }
+    #contenido_hero a {
+        border-radius: 20px;
+    }
+    #img_hero {
+        width: 100%;
+        height: 30vh;
+        order: 1;
+    }
+    #img_hero img {
+        border-radius: 0;
+        object-position: bottom;
+    }
+    #conocenos {
+        flex-direction: column;
+    }
+    #marca_txt {
+        width: 100%;
+        padding: 50px;
+        order: 2;
+    }
+    #marca_txt > div {
+        padding: 50px 0;
+        text-align: center;
+    }
+    #marca_img {
+        width: 100%;
+        order: 1;
+        height: 30vh;
+    }
+    #marca_img img {
+        border-radius: 0;
+    }
+    #comprar {
+        justify-content: start;
+    }
+    #comprar ol {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #comprar li {
+        width: 100%;
+        flex-direction: row;
+        justify-content: start;
+        text-align: left;
+    }
+    #personalizar div {
+        justify-content: center;
+    }
+    #contacto > div {
+        gap: 50px;
+    }
+    .contactar p {
+        text-align: center;
+    }
+    #info_contacto {
+        justify-content: center;
+    }
+}
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+    #contenido_hero p {
+        font-size: 16px;
+    }
+    #contenido_hero a {
+        width: 120px;
+        font-size: 16px;
+    }
+    #coleccion a {
+        text-align: center;
+    }
+    #marca, #lema {
+        font-size: 16px;
+    }
+    #lema {
+        padding: 0;
+    }
+    #medioambiente div {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .contactar {
+        font-size: 16px;
+        width: 100%;
+    }
+    footer div {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    footer ul {
+        width: 100%;
+        justify-content: center;
+    }
+    footer ul img {
+        width: 30px;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    header div {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    header > a {
+        justify-content: start;
+    }
+    #burger_menu{
+        justify-self: end;
+    }
+    #hero {
+        height: 85vh;
+    }
+    #coleccion {
+        align-items: center;
+        text-align: center;
+    }
+    #coleccion > nav ul {
+        justify-content: center;
+    }
+    .productos ul {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    #comprar ol {
+        gap: 40px;
+        padding: 0;
+    }
+    #comprar li {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    #personalizar {
+        font-size: 16px;
+    }
+}
