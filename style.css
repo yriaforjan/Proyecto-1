@@ -678,6 +678,15 @@ footer ul img {
         gap: 10px;
         padding: 20px;
     }
+    #comprar ol {
+        gap: 40px;
+        padding: 0;
+    }
+    #comprar li {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
     .contactar {
         font-size: 16px;
         width: 100%;
@@ -731,14 +740,6 @@ footer ul img {
     }
     .productos ul {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-    #comprar ol {
-        gap: 40px;
-        padding: 0;
-    }
-    #comprar li {
-        flex-direction: column;
-        text-align: start;
     }
     #personalizar {
         font-size: 16px;
